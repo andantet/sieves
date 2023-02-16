@@ -1,0 +1,43 @@
+{
+  "schemaVersion": 1,
+  "id": "sieves",
+  "version": "${version}",
+  "name": "Sieves",
+  "description": "A mod that adds Sieves.",
+  "authors": [
+    "Andante"
+  ],
+  "contact": {
+    "homepage": "https://andante.dev",
+    "sources": "https://github.com/andantet/sieves",
+    "issues": "https://github.com/andantet/sieves/issues"
+  },
+  "license": "MIT",
+  "icon": "assets/sieves/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      {
+        "adapter": "kotlin",
+        "value": "dev.andante.sieves.Sieves"
+      }
+    ],
+    "client": [
+      {
+        "adapter": "kotlin",
+        "value": "dev.andante.sieves.client.SievesClient"
+      }
+    ],
+    "fabric-datagen": [
+      {
+        "adapter": "kotlin",
+        "value": "dev.andante.sieves.data.SievesDataGeneration"
+      }
+    ]
+  },
+  "depends": {
+    "fabric-api": "*",
+    "fabric-language-kotlin": "*",
+    "minecraft": ">=1.19.3"
+  }
+}

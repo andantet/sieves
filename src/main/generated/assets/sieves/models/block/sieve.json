@@ -1,0 +1,7 @@
+{
+  "parent": "sieves:block/template_sieve",
+  "textures": {
+    "net": "sieves:block/sieve",
+    "texture": "minecraft:block/oak_planks"
+  }
+}
