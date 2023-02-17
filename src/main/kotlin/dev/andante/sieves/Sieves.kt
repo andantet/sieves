@@ -10,10 +10,11 @@ import net.minecraft.item.Items
 
 object Sieves : ModInitializer {
     const val MOD_ID = "sieves"
+    const val MOD_NAME = "Sieves"
 
     @Suppress("UnstableApiUsage")
     override fun onInitialize() {
-        println("Initializing $MOD_ID")
+        println("Initializing $MOD_NAME")
 
         SievesBlocks; SievesItems; SievesBlockEntityTypes
 
