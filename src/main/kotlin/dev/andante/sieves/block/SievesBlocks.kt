@@ -17,6 +17,8 @@ object SievesBlocks {
             .nonOpaque()
     ))
 
+    val SIEVING_SIEVE = register("sieving_sieve", SievingSieveBlock(FabricBlockSettings.of(Material.WOOD, MapColor.OAK_TAN)))
+
     private fun register(id: String, block: Block): Block {
         return Registry.register(Registries.BLOCK, Identifier(Sieves.MOD_ID, id), block)
     }

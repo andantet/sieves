@@ -56,5 +56,4 @@ class SievesLootProvider(out: FabricDataOutput) : FabricBlockLootTableProvider(o
     override fun generate() {
         this.addDrop(SievesBlocks.SIEVE)
     }
-
 }
