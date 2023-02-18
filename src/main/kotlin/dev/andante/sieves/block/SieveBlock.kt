@@ -4,6 +4,7 @@ package dev.andante.sieves.block
 
 import dev.andante.sieves.block.entity.SieveBlockEntity
 import dev.andante.sieves.block.entity.SievesBlockEntityTypes
+import dev.andante.sieves.tag.SievesBlockTags
 import net.minecraft.block.*
 import net.minecraft.block.entity.BlockEntity
 import net.minecraft.block.entity.BlockEntityTicker
@@ -11,7 +12,6 @@ import net.minecraft.block.entity.BlockEntityType
 import net.minecraft.entity.Entity
 import net.minecraft.entity.FallingBlockEntity
 import net.minecraft.entity.player.PlayerEntity
-import net.minecraft.registry.tag.BlockTags
 import net.minecraft.server.world.ServerWorld
 import net.minecraft.util.math.BlockPos
 import net.minecraft.util.math.Direction
@@ -35,7 +35,7 @@ class SieveBlock(settings: Settings) : BlockWithEntity(settings) {
         )
 
         fun isSievable(state: BlockState): Boolean {
-            return state.isIn(BlockTags.SAND)
+            return state.isIn(SievesBlockTags.SIEVABLE_BLOCKS)
         }
 
         fun removeExtension(world: World, pos: BlockPos) {

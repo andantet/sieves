@@ -1,0 +1,12 @@
+{
+  "required": true,
+  "package": "dev.andante.sieves.mixin",
+  "compatibilityLevel": "JAVA_17",
+  "mixins": [
+    "BlockLootTableGeneratorAccessor",
+    "LootContextTypesAccessor"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
