@@ -38,4 +38,12 @@ class SievingSieveBlock(settings: Settings) : Block(settings) {
     override fun getPistonBehavior(state: BlockState): PistonBehavior {
         return PistonBehavior.BLOCK
     }
+
+    override fun isTranslucent(state: BlockState, world: BlockView, pos: BlockPos): Boolean {
+        return true
+    }
+
+    override fun getAmbientOcclusionLightLevel(state: BlockState, world: BlockView, pos: BlockPos): Float {
+        return 1.0f
+    }
 }
