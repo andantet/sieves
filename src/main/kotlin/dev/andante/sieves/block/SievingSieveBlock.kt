@@ -39,7 +39,7 @@ class SievingSieveBlock(settings: Settings) : Block(settings) {
         return PistonBehavior.BLOCK
     }
 
-    override fun isTranslucent(state: BlockState, world: BlockView, pos: BlockPos): Boolean {
+    override fun isTransparent(state: BlockState, world: BlockView, pos: BlockPos): Boolean {
         return true
     }
 
