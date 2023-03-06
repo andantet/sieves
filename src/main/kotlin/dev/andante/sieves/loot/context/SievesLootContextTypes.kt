@@ -1,7 +1,7 @@
 package dev.andante.sieves.loot.context
 
 import dev.andante.sieves.Sieves
-import dev.andante.sieves.mixin.LootContextTypesAccessor
+import dev.andante.sieves.mixin.access.LootContextTypesAccessor
 import net.minecraft.loot.context.LootContextType
 import net.minecraft.util.Identifier
 import java.util.function.Consumer

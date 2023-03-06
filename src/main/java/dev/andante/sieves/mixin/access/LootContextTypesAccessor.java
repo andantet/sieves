@@ -1,4 +1,4 @@
-package dev.andante.sieves.mixin;
+package dev.andante.sieves.mixin.access;
 
 import com.google.common.collect.BiMap;
 import net.minecraft.loot.context.LootContextType;
